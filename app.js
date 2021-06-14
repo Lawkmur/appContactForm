@@ -47,7 +47,7 @@ app.post('/send', (req, res) => {
     secure: false, // true for 465, false for other ports
     auth: {
         user: 'ricardo.menjivar2022@adoc.superate.org.sv', // generated ethereal user
-        pass: 'Fabio_0208'  // generated ethereal password
+        pass: 'password'  // generated ethereal password
     },
     tls:{
       rejectUnauthorized:false
