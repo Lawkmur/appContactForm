@@ -1,0 +1,23 @@
+body{
+  font-family: 'Roboto Mono', monospace;
+  background: #274690;
+}
+
+.container{
+  border: 5px solid #F5F3F5;
+  background-color: #A5D8FF;
+  padding: 5em;
+  margin: 1.5em;
+  border-radius: 3%;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control{
+  width: 100%;
+  padding: 1em;
+  outline: none;
+}

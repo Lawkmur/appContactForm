@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es" >
+    <head>
+        <!-- Meta tags necesarios -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+        <!-- Boostrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+        <!-- Boostrap ICONS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <!--Estilos personalizados-->
+        <link rel="stylesheet" href="/public/css/estilos.css">
+
+        <!-- Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+        
+
+        <title>Email App FORM</title>
+    </head>
+<body>
+
+        <div class="container mx-auto">
+
+            <form method="POST" action="send">
+
+                <div class="form mb-3">
+                    <label for="exampleFormControlInput1">Full Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Demetrius Demarcus">
+                </div>
+
+                <div class="form mb-3">
+                    <label for="exampleFormControlInput1">Street Addess 1</label>
+                    <input type="text" class="form-control"  name="adress" id="adress" placeholder="Street adress, PO box, company name, c/o">
+               </div>
+
+                <div class="form mb-3">
+                    <label for="exampleFormControlInput1">Street Adress 2</label>
+                    <input type="text" name="adress2" class="form-control" id="adress2" placeholder="Apartment, suite, unit, building, floor, etc">
+                </div>
+
+                <div class="form mb-3">
+                    <label for="exampleFormControlInput1">City</label>
+                    <input type="tel" name="city" class="form-control" id="city" placeholder="Smallville">
+               </div>
+
+                <div class="form mb-3">
+                    <label for="form5" name="state" class="form-label"> State</label>
+                    <select class="form-select"  >
+                        <option selected>Alabama</option>
+                        <option value="1">Mexico</option>
+                        <option value="2">USA</option>
+                        <option value="3">El Salvador</option>
+                        <option value="4">Colombia</option>
+                    </select>
+                </div>
+               
+                <div class="form mb-3">
+                <label for="exampleFormControlInput1">Zip Code</label>
+                <input type="tel" name="zipcode" class="form-control" id="zipcode" placeholder="####">
+                </div>
+
+                <div class="mb-3">
+                 <button type="submit" class="btn btn-success ">Success</button>
+                </div>
+            </form>
+
+         </div>
+
+    
+
+        <!-- JS, Popper y Boostrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+        
+</body>
+</html>
