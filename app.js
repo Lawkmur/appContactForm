@@ -40,28 +40,28 @@ app.post('/send', (req, res) => {
     big thank you!
   `;
 
-  // create reusable transporter object using the default SMTP transport
-  let transporter = nodemailer.createTransport({
-    host: 'smtp.office365.com',
-    port: 587,
-    secure: false, // true for 465, false for other ports
-    auth: {
-        user: 'ricardo.menjivar2022@adoc.superate.org.sv', // generated ethereal user
-        pass: 'password'  // generated ethereal password
-    },
-    tls:{
-      rejectUnauthorized:false
-    }
-  });
-
-  // setup email data with unicode symbols
-  let mailOptions = {
-      from: '"Ricardo Menjívar" <ricardo.menjivar2022@adoc.superate.org.sv>', // sender address
-      to: 'iammasterpvp333@gmail.com', // list of receivers
-      subject: 'Whats popping?', // Subject line
-      text: 'Hello world!', // plain text body
-      html: output // html body
-  };
+      // Creamos una funcion re-utilizable usando el protocolo SMTP con nodemailer
+      let transporter = nodemailer.createTransport({
+        host: 'smtp.office365.com', // SMTP INFO SOLO PARA OFFICE 365 ACCOUNTS
+        port: 587,
+        secure: false, // true para 465, falsa para otros.
+        auth: {
+            user: 'correoelectronico@outlook.com', // correo del transporte
+            pass: 'password'  // contraseña del transporte
+        },
+        // Transport Layer Securuty. 
+        tls:{
+          rejectUnauthorized:false
+        }
+      });
+    
+      // Set up de los datos del correo
+      let mailOptions = {
+          from: '"Fabio Menjívar" <correoelectronico@outlook.com>', // Correo del emisor
+          to: 'anotheremail@outlook.com', // Lista de receptores
+          subject: 'Whats popping?!', // Asunto del correo
+          html: output // cuerpo html.
+      };
 
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
