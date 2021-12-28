@@ -62,7 +62,7 @@ app.post('/send', (req, res) => {
       let mailOptions = {
           from: '"Fabio Menjívar" <correoelectronico@outlook.com>', // Correo del emisor
           to: 'anotheremail@outlook.com', // Lista de receptores
-          subject: 'Whats up?!', // Asunto del correo
+          subject: 'Whats good?!', // Asunto del correo
           html: output // cuerpo html.
       };
 
